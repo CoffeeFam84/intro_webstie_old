@@ -1,23 +1,34 @@
-import logo from './logo.svg';
+import { Routes, Route } from 'react-router-dom';
+import Header from './components/Header/Header.jsx';
+import Home from './pages/Home/Home.jsx';
+import About from './pages/About/About.jsx';
+import Crosmoshooter from './pages/Crosmoshooter/Crosmoshooter.jsx';
+import Collection from './pages/Collection/Collection.jsx';
+import Merchandise from './pages/Merchandise/Merchandise.jsx';
+import Staking from './pages/Staking/Staking.jsx';
+import Roadmap from './pages/Roadmap/Roadmap.jsx';
+import Team from './pages/Team/Team.jsx';
+import Partners from './pages/Partners/Partners.jsx';
+import Footer from './components/Footer/Footer.jsx';
 import './App.css';
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <Home />
+      <div className="content-body">
+        <About />
+        <Crosmoshooter />
+        <Collection />
+        <Merchandise />
+        <Staking />
+        <Roadmap />
+        <Team />
+        <Partners />
+      </div>
+      <Footer />
     </div>
   );
 }

@@ -1,0 +1,65 @@
+.appHeader {
+  background: transparent !important;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.menuItems {
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.menuItems a {
+  font-family: 'Catamaran';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 39px;
+  padding-bottom: 20px;
+  letter-spacing: 0.05em;
+  color: white;
+  text-decoration: none;
+}
+
+.menuItems span {
+  border-bottom: 5px solid #FFB300;
+  padding-bottom: 12px;
+}
+
+.desktop-logo {
+  display: none;
+  margin-right: 28px;
+  width: 92px;
+  height: 106px;
+  margin-top: 27px;
+  margin-left: 28px;
+}
+
+.mobile-logo {
+  display: flex;
+  width: 92px;
+  height: 106px;
+  margin-right: 2px;
+  margin-top: 27px; 
+}
+
+@media only screen and (min-width: 769px) {
+  .desktop-logo {
+    display: flex;
+  }
+
+  .mobile-logo {
+    display: none;
+  }
+}

@@ -1,0 +1,46 @@
+.home {
+  background-image: url('/public/assets/bg1.png');
+  height: 1066px;
+}
+
+.img-title-div {
+  display: flex;
+  justify-content: center;
+}
+
+.img-title {
+  margin-top: 256px;
+  height: fit-content;
+  z-index: 999;
+}
+
+.subtitle {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Catamaran';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: white;
+  margin-top: -37px;
+}
+
+.subtitle span {
+  color: #FFB300;
+}
+
+.img-craft-1 {
+  position: absolute;
+  top: 121px;
+  z-index: 998;
+}
+
+.img-craft-2 {
+  position: absolute;
+  right: 0px;
+  top: 204px;
+}
