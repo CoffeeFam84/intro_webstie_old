@@ -1,0 +1,83 @@
+.crosmoshooter {
+  background: radial-gradient(36.57% 86.56% at 74.71% 48.01%, #1A0366 0%, #0D0233 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.35);
+  border-radius: 42px;
+  margin-right: 69px;
+  margin-left: 69px;
+  padding: 80px;
+  margin-top: 211px;
+}
+
+.crosmoshooter-header {
+  display: flex;
+  align-items: center;
+}
+
+.crosmoshooter-title {
+  font-family: 'Catamaran';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 118px;
+
+  color: #FFFFFF;
+
+  display: inline-block;
+}
+
+.vertical-bar {
+  width: 69px;
+  height: 10px;
+  background: #FFB300;
+  border-radius: 53.5px;
+  transform: rotate(-90deg);
+  display: inline-block;
+}
+
+.crosmo-desc {
+  width: 724px;
+
+  font-family: 'Catamaran';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 153%;
+  /* or 37px */
+
+  color: #FFFFFF;
+
+  display: inline-block;
+}
+
+.cromoshooter-body {
+  width: 100%;
+  height: 766px;
+  background: #000;
+  margin-bottom: 63px;
+  margin-top: 63px;
+}
+
+.crosmoshooter-footer {
+  display: flex;
+  align-items: center;
+}
+
+.crosmoshooter-btn {
+  font-family: 'Catamaran';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 52px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+  width: 387px;
+  height: 110px;
+  background: radial-gradient(68.1% 536.43% at 45.98% 26.29%, #1427B3 23.44%, #280E8A 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.35);
+  border-radius: 30px;
+
+  margin-left: 41px;
+}

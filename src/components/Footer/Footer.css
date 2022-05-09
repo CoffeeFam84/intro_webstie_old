@@ -1,0 +1,74 @@
+.footer {
+  background-image: url(/public/assets/footer.png);
+  padding: 43px;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 22%;
+}
+
+.footer-menu a {
+  font-family: 'Catamaran';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 39px;
+  letter-spacing: 0.05em;
+
+  color: #FFFFFF;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 31px;
+  font-family: 'Catamaran';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 153%;
+  /* or 31px */
+
+  text-align: center;
+
+  color: #FFB300;
+}
+
+.footer-social img {
+  margin: 14px;
+}
+
+.footer-copyright {
+  font-family: 'Catamaran';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 153%;
+  /* or 31px */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #FFFFFF;
+}
+
+.footer-contact {
+  font-family: 'Catamaran';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 153%;
+  /* or 31px */
+
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: #FFB300;
+}

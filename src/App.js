@@ -15,7 +15,7 @@ import './App.css';
 
 const App = () => {
   return (
-    <div>
+    <div className="app">
       <Header />
       <Home />
       <div className="content-body">

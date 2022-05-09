@@ -1,0 +1,31 @@
+.team {
+  margin-top: 60px;
+}
+
+.team-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-title {
+  font-family: 'Catamaran';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 79px;
+  text-align: center;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
+
+.team-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 85px;
+  padding-right: 85px;
+}

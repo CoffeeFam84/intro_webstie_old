@@ -1,0 +1,162 @@
+.collection {
+  margin-top: 112px;
+}
+
+.collection-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.collection-title {
+  font-family: 'Catamaran';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 79px;
+  text-align: center;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
+
+.horizental-bar {
+  width: 228px;
+  height: 5px;
+  background: #FFB300;
+  border-radius: 53.5px;
+  display: inline-block;
+}
+
+.collection-body {
+  margin-top: 78px;
+  margin-left: 68px;
+  margin-right: 68px;
+  background: radial-gradient(36.57% 86.56% at 74.71% 48.01%, #1A0366 0%, #0D0233 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.35);
+  border-radius: 42px;
+}
+
+.collection-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 140px;
+  height: 630px;
+}
+
+.collection-card-left {
+  margin-left: 10%;
+  margin-top: 19px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.collection-card-left-title {
+  font-family: 'Catamaran';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 118px;
+
+  color: #FFFFFF;
+  margin-bottom: 8px;
+}
+
+.collection-card-left-desc {
+  max-width: 687px;
+  font-family: 'Catamaran';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 153%;
+  /* or 37px */
+
+  color: #FFFFFF;
+  margin-bottom: 50px;
+}
+
+.collection-card-left-btn {
+  width: 387px;
+  height: 110px;
+  font-family: 'Catamaran';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 52px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+  background: radial-gradient(68.1% 536.43% at 45.98% 26.29%, #1427B3 23.44%, #280E8A 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.35);
+  border-radius: 30px;
+}
+
+.collection-card-right {
+  /* width: 50%; */
+  position: relative;
+  display: flex;
+  margin-right: 4%;
+}
+
+.collection-card-img {
+  /* position: absolute; */
+  /* top: 0px;
+  left: 0px; */
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #000;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.2);
+  border: 3px solid #FFFFFF;
+  margin-top: 30px !important;
+  margin-left: 75px !important;
+  margin-right: 75px !important;
+  margin-bottom: 47px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #FFB300;
+  border: 3px solid #FFB300;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.swiper-button-next {
+  background-image: url(/public/assets/next.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  height: 100px;
+  width: 100px;
+}
+
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-prev {
+  background-image: url(/public/assets/prev.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  height: 100px;
+  width: 100px;
+}
+
+.swiper-button-prev::after {
+  display: none;
+}

@@ -1,4 +1,12 @@
+.app {
+  font-family: 'Catamaran';
+  font-style: normal;
+  color: white;
+  background-color: #150352;
+}
+
 .content-body {
   background-image: url('/public/assets/bg2.png');
-  height: 1000px;
+  /* background-repeat: no-repeat; */
+  background-position: right;
 }
