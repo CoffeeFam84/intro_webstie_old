@@ -10,6 +10,7 @@
 }
 
 .collection-title {
+  max-width: 80%;
   font-family: 'Catamaran';
   font-style: normal;
   font-weight: 400;
@@ -32,8 +33,9 @@
 
 .collection-body {
   margin-top: 78px;
-  margin-left: 68px;
-  margin-right: 68px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
   background: radial-gradient(36.57% 86.56% at 74.71% 48.01%, #1A0366 0%, #0D0233 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
   box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.35);
   border-radius: 42px;
@@ -42,15 +44,12 @@
 .collection-card {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
   margin-bottom: 140px;
-  height: 630px;
+  padding: 4% 9%;
 }
 
 .collection-card-left {
-  margin-left: 10%;
-  margin-top: 19px;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -101,7 +100,6 @@
   /* width: 50%; */
   position: relative;
   display: flex;
-  margin-right: 4%;
 }
 
 .collection-card-img {
@@ -111,6 +109,24 @@
   width: 100%;
   height: 100%;
   z-index: 999;
+}
+
+.collection-card-btn {
+  display: none;
+  font-family: 'Catamaran';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+  background: radial-gradient(68.1% 536.43% at 45.98% 26.29%, #1427B3 23.44%, #280E8A 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.35);
+  border-radius: 30px;
+  padding: 22px 33px;
+  margin-top: 55px;
 }
 
 .swiper-pagination-bullet {
@@ -159,4 +175,51 @@
 
 .swiper-button-prev::after {
   display: none;
+}
+
+@media only screen and (max-width: 769px) {
+  .collection {
+    margin-top: 45px;
+  }
+  .collection-title {
+    font-size: 30px;
+    line-height: 43px;
+  }
+  .collection-body {
+    margin-top: 24px;
+  }
+  .collection-card {
+    flex-direction: column;
+  }
+
+  .collection-card-left-title {
+    font-size: 30px;
+    line-height: 49px;
+  }
+
+  .collection-card-left-desc {
+    font-size: 20px;
+  }
+
+  .collection-card-left-desc span {
+    display: none;
+  }
+  
+  
+  .collection-card-left-btn {
+    display: none;
+  }
+
+  .collection-card-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-pagination-bullet {
+    margin-top: 30px !important;
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+    margin-bottom: 47px !important;
+  }
 }

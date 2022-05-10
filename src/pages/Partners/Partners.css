@@ -32,3 +32,9 @@
   padding-right: 85px;
   margin-bottom: 150px;
 }
+
+@media only screen and (max-width: 769px) {
+  .partners {
+    display: none;
+  }
+}

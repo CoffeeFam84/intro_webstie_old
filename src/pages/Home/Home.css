@@ -10,6 +10,7 @@
 
 .img-title {
   margin-top: 256px;
+  width: 80%;
   height: fit-content;
   z-index: 999;
 }
@@ -26,7 +27,7 @@
   text-align: center;
   letter-spacing: 0.05em;
   color: white;
-  margin-top: -37px;
+  margin-top: -77px;
 }
 
 .subtitle span {
@@ -43,4 +44,50 @@
   position: absolute;
   right: 0px;
   top: 204px;
+}
+
+.img-craft-1-mobile {
+  position: absolute;
+  display: none;
+}
+
+.img-craft-2-mobile {
+  position: absolute;
+  display: none;
+}
+
+@media only screen and (max-width: 769px) {
+  .home {
+    height: 692px;
+  }
+  .subtitle {
+    flex-direction: row;
+    font-size: 12px;
+    line-height: 12px;
+    margin-top: -6px;
+  }
+
+  .img-title {
+    margin-top: 131px;
+  }
+
+  .img-craft-1 {
+    display: none;
+  }
+
+  .img-craft-2 {
+    display: none;
+  }
+
+  .img-craft-1-mobile {
+    display: block;
+    top: 226px;
+    left: 0;
+  }
+  
+  .img-craft-2-mobile {
+    display: block;
+    top: 136px;
+    right: 0px;
+  }
 }

@@ -8,7 +8,7 @@ const Crosmoshooter = () => {
       <div className="crosmoshooter-header">
         <span className="crosmoshooter-title">Crosmoshooter</span>
         <span className="vertical-bar"></span>
-        <span className="crosmo-desc">
+        <span className="crosmo-header-desc">
           Launched early march 2022, Crosmoshooter was the first WEB3 enabled 
           game on Cronos blockchain. Holders can play with and level up their 
           Crosmocraft NFT.
@@ -18,10 +18,23 @@ const Crosmoshooter = () => {
         <video></video>
       </div>
       <div className="crosmoshooter-footer">
-        <span className="crosmo-desc">
-          Launched early march 2022, Crosmoshooter was the first WEB3 enabled 
-          game on Cronos blockchain. Holders can play with and level up their 
-          Crosmocraft NFT.
+        <span className="crosmo-header-desc">
+        Crosmoshooter is an arcade shooter game with endless levels, playable 
+        with Crosmocraft NFTs. It feautures leagues, hi scores, tournaments, 
+         rewards and much more.
+        </span>
+
+        <span className="crosmo-footer-desc">
+          Launched early march 2022, 
+          Crosmoshooter was the first WEB3 
+          enabled game on Cronos 
+          blockchain.  
+          <br />
+          <br />
+          Holders can play  with and level up 
+          their Crosmocraft NFT in an 
+          arcade shooter game with endless 
+          levels,
         </span>
         <button className="crosmoshooter-btn">
           BUY NOW

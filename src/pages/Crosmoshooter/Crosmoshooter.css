@@ -2,10 +2,12 @@
   background: radial-gradient(36.57% 86.56% at 74.71% 48.01%, #1A0366 0%, #0D0233 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
   box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.35);
   border-radius: 42px;
-  margin-right: 69px;
-  margin-left: 69px;
-  padding: 80px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 75px;
   margin-top: 211px;
+  box-sizing: border-box;
 }
 
 .crosmoshooter-header {
@@ -34,8 +36,8 @@
   display: inline-block;
 }
 
-.crosmo-desc {
-  width: 724px;
+.crosmo-header-desc {
+  max-width: 724px;
 
   font-family: 'Catamaran';
   font-style: normal;
@@ -53,13 +55,27 @@
   width: 100%;
   height: 766px;
   background: #000;
-  margin-bottom: 63px;
-  margin-top: 63px;
+  margin-bottom: 7%;
+  margin-top: 7%;
 }
 
 .crosmoshooter-footer {
   display: flex;
   align-items: center;
+  justify-content: space-around;
+}
+
+.crosmo-footer-desc {
+  display: none;
+  font-family: 'Catamaran';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 153%;
+  /* or 31px */
+
+
+  color: #FFFFFF;
 }
 
 .crosmoshooter-btn {
@@ -73,11 +89,61 @@
   text-transform: uppercase;
 
   color: #FFFFFF;
-  width: 387px;
-  height: 110px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
   background: radial-gradient(68.1% 536.43% at 45.98% 26.29%, #1427B3 23.44%, #280E8A 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
   box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.35);
   border-radius: 30px;
 
-  margin-left: 41px;
+  padding: 31px 41px;
+}
+
+@media only screen and (max-width: 769px) {
+  .crosmoshooter {
+    margin-top: 38px;
+    padding: 50px 10px;
+  }
+
+  .crosmoshooter-header {
+    padding-left: 20px;
+  }
+
+  .crosmo-header-desc {
+    display: none;
+  }
+
+  .cromoshooter-body {
+    height: 165px;
+  }
+
+  .crosmoshooter-footer {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .crosmo-footer-desc {
+    display: block;
+  }
+
+  .crosmoshooter-btn {
+    margin-top: 43px;
+    margin-left: 0px;
+    font-size: 20px;
+    line-height: 33px;
+    height: 74px;
+    width: 100%;
+  }
+
+  .crosmoshooter-title {
+    font-size: 30px;
+    line-height: 49px;
+  }
+
+  .vertical-bar {
+    width: 38px;
+    height: 4px;
+  }
 }

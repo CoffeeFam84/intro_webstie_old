@@ -10,7 +10,9 @@ const Roadmap = () => {
         </div>
         <div className="horizental-bar"></div>
       </div>
-      <div className="roadmap-body"></div>
+      <div className="roadmap-body">
+        <img src="/assets/roadmap-mobile.png" className="roadmap-img" />
+      </div>
     </div>
   );
 }

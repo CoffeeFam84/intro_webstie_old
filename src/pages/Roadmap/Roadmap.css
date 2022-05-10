@@ -23,5 +23,10 @@
 }
 
 .roadmap-body {
-  height: 1032px;
+  /* height: 1032px; */
+}
+
+.roadmap-img {
+  width: 100%;
+  height: fit-content;
 }

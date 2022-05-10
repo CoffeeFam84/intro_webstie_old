@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, {useEffect, useState} from 'react';
 import Box from '@mui/material/Box';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
@@ -6,15 +6,17 @@ import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import { Link } from 'react-router-dom';
+import cx from 'classnames';
 import './Header.css';
 
 const pages = ['HOME', 'ABOUT ', 'CROSMOSHOOTER', 'COLLECTIONS', 'ROADMAP'];
 
 const Header = () => {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
+  const [anchorElNav, setAnchorElNav] = useState(null);
+  const [anchorElUser, setAnchorElUser] = useState(null);
+  const [headerShow, setHeaderShow] = useState(false);
 
-  const [value, setValue] = React.useState(0);
+  const [value, setValue] = useState(0);
 
   const handleChange = (e, newValue) => {
     setValue(newValue);
@@ -35,11 +37,24 @@ const Header = () => {
     setAnchorElUser(null);
   };
 
+  const stickHeader = () => {
+    let windowHeight = window.scrollY;
+    if (windowHeight > 300) {
+      setHeaderShow(true);
+    } else {
+      setHeaderShow(false);
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", stickHeader);
+  }, []);
+
   return (
-    <div className="appHeader">
+    <div className={cx("appHeader", {"blur-background": headerShow})}>
         <img src="/assets/LogoShirt.png" className='desktop-logo' />
 
-        <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+        <Box sx={{  display: { xs: 'flex', md: 'none' } }}>
           <IconButton
             size="large"
             aria-label="account of current user"
@@ -77,15 +92,14 @@ const Header = () => {
         </Box>
         <img src="/assets/LogoShirt.png" className='mobile-logo' />
 
-        <div className="menuItems">
+        <div className="menu-items">
           <Link to="#" ><span>HOME</span></Link>
           <Link to="#" ><span>ABOUT</span></Link>
           <Link to="#" ><span>CROSMOSHOOTER</span></Link>
           <Link to="#" ><span>COLLECTIONS</span></Link>
           <Link to="#" ><span>ROADMAP</span></Link>
         </div>
-        
-        <img src="/assets/discord.svg" className='desktop-logo' />
+        <img src="/assets/discord.svg" className='discord-link' />
       </div>
   );
 };

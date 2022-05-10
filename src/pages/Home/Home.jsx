@@ -13,6 +13,8 @@ const Home = () => {
       </div>
       <img src="/assets/craft1.png" className="img-craft-1" /> 
       <img src="/assets/craft2.png" className="img-craft-2" /> 
+      <img src="/assets/craft1-mobile.png" className="img-craft-1-mobile" /> 
+      <img src="/assets/craft2-mobile.png" className="img-craft-2-mobile" /> 
     </div>
   )
 }

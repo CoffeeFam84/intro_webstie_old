@@ -1,12 +1,16 @@
 import React from 'react';
 import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
+import HorizentalBar from '../../components/HorizentalBar/HorizentalBar.jsx';
 import "./About.css";
 
 const About = () => {
   return (
     <div>
-      <div className="about-heading">
-        About The Crosmonauts NFT Collection
+      <div className="about-header">
+        <div className="about-title">
+          About The Crosmonauts NFT Collection
+        </div>
+        <HorizentalBar width="60%" marginBottom="28px" marginTop="30px" />
       </div>
       <div className="about-body">
         <div>
@@ -23,7 +27,7 @@ const About = () => {
             <ArrowForwardIosOutlinedIcon sx={{ paddingLeft: '19.07px'}} />
           </button>
         </div>
-        <div>
+        <div className="about-img">
           <img src="/assets/crosmonauts.png" />
         </div>
       </div>

@@ -22,21 +22,15 @@
   color: #FFFFFF;
 }
 
-.horizental-bar {
-  width: 228px;
-  height: 5px;
-  background: #FFB300;
-  border-radius: 53.5px;
-  display: inline-block;
-}
-
 .merchandise-card {
   background: radial-gradient(36.57% 86.56% at 74.71% 48.01%, #1A0366 0%, #0D0233 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
   box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.35);
   border-radius: 42px;
   margin-top: 104px;
-  margin-left: 72px;
-  margin-right: 65px; 
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  box-sizing: border-box;
   padding-left: 8%;
   padding-right: 8%;
   padding-top: 70px;
@@ -56,6 +50,8 @@
 .merchandise-body {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: stretch;
 }
 
 .merchandise-left {
@@ -103,10 +99,64 @@
 }
 
 .merchandise-bigshirt {
-  /* margin-right: 75px; */
-  flex-grow: 2;
+  height: fit-content;
 }
 
 .merchandise-smallshirt {
-  flex-grow: 1;
+  height: fit-content;
+}
+
+.merchandise-mobile-btn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Catamaran';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 46px;
+  margin-top: 20px;
+
+  color: #FFFFFF;
+  padding: 3px 19px 3px 19px;
+  background: radial-gradient(68.1% 536.43% at 45.98% 26.29%, #1427B3 23.44%, #280E8A 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.35);
+  border-radius: 30px;
+}
+
+@media only screen and (max-width: 769px) {
+  .merchandise-title {
+    font-size: 30px;
+    line-height: 43px;
+  }
+  .merchandise-card-title {
+    font-size: 24px;
+    line-height: 39px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .merchandise-left {
+    display: none;
+  }
+
+  .merchandise-bigshirt {
+    width: 50%;
+  }
+  
+  .merchandise-smallshirt {
+    width: 35%;
+  }
+
+  .merchandise-card {
+    padding-bottom: 33px;
+    padding-top: 27px;
+    margin-top: 40px;
+  }
+  .merchandise-body {
+    flex-direction: column;
+  }
+  .merchandise-mobile-btn {
+    display: flex;
+  }
 }

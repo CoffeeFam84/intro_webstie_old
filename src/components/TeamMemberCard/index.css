@@ -10,7 +10,7 @@
 }
 
 .member-avatar {
-  z-index: 1001;
+  z-index: 997;
   position: absolute;
   top: -163px;
 }

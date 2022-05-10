@@ -18,9 +18,12 @@ const Staking = () => {
             oriented DEX on Cronos Chain where you can trade, farm, earn 
             and stake your NFTs from several Cronos projects.
           </div>
+          <div>
+            <img src="/assets/cyborgswap.png" className="staking-card-img-mobile" />
+          </div>
           <div className="staking-btn-wrapper">
             <button className="staking-btn">
-              GO TO CYBORGSWAP
+               CYBORGSWAP
               <ArrowForwardIosOutlinedIcon sx={{padingLeft: '30px'}} />
             </button>
           </div>

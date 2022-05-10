@@ -1,12 +1,13 @@
 import React from 'react';
 import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
+import HorizentalBar from '../../components/HorizentalBar/HorizentalBar';
 import './Merchandise.css';
 const Merchandise = () => {
   return (
     <div className="merchandise">
       <div className="merchandise-header">
         <div className="merchandise-title">MERCHANDISE</div>
-        <span className="horizental-bar"></span>
+        <HorizentalBar />
       </div>
       <div className="merchandise-card">
         <div className="merchandise-card-title">
@@ -33,6 +34,10 @@ const Merchandise = () => {
           <div className="merchandise-right">
             <img src="/assets/shirts1.png" className="merchandise-bigshirt" />
             <img src="/assets/shirts2.png" className="merchandise-smallshirt"/>
+          </div>
+          <div className="merchandise-mobile-btn">
+            Buy now
+            <ArrowForwardIosOutlinedIcon sx={{padingLeft: '30px'}} />
           </div>
         </div>
       </div>

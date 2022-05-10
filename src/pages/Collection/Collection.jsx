@@ -5,6 +5,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper";
 import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
+import { useMediaQuery } from "react-responsive";
 import './Collection.css';
 
 const Collection = () => {
@@ -14,7 +15,7 @@ const Collection = () => {
       return '<span class="' + className + '"></span>';
     },
   };
-
+  const isMobile = useMediaQuery({ query: '(max-width: 769px)' });
   return (
     <div className="collection">
       <div className="collection-header">
@@ -23,7 +24,7 @@ const Collection = () => {
       </div>
       <div className="collection-body">
         <Swiper
-          navigation={true}
+          navigation={!isMobile}
           pagination={pagination}
           modules={[Navigation, Pagination]}
           className="mySwiper"
@@ -39,9 +40,9 @@ const Collection = () => {
                   a Booster, and Engine and a Space Deck. 
                   <br />
                   <br />
-                  Furthermore, a Crosmocraft is necessary to play the Crosmoshooter 
+                  <span>Furthermore, a Crosmocraft is necessary to play the Crosmoshooter 
                   game. Holders of Crosmocrafts use their own NFT to play the game, 
-                  and blow up some asteroids and enemy spacehips.
+                  and blow up some asteroids and enemy spacehips.</span>
                 </div>
                 <button className="collection-card-left-btn">
                   VIEW COLLECTION
@@ -51,6 +52,10 @@ const Collection = () => {
               <div className="collection-card-right">
                 <img src="/assets/craft3.png" className="collection-card-img" />
               </div>
+              <a className="collection-card-btn">
+                VIEW COLLECTION
+                <ArrowForwardIosOutlinedIcon sx={{padingLeft: '30px'}} />
+              </a>
             </div>
           </SwiperSlide>
           <SwiperSlide>
@@ -72,6 +77,10 @@ const Collection = () => {
               <div className="collection-card-right">
                 <img src="/assets/crosmopilot.png" className="collection-card-img" />
               </div>
+              <a className="collection-card-btn">
+                VIEW COLLECTION
+                <ArrowForwardIosOutlinedIcon sx={{padingLeft: '30px'}} />
+              </a>
             </div>
           </SwiperSlide>
           <SwiperSlide>
@@ -89,6 +98,10 @@ const Collection = () => {
               <div className="collection-card-right">
                 <img src="/assets/crosmonatus1.png" className="collection-card-img" />
               </div>
+              <a className="collection-card-btn">
+                VIEW COLLECTION
+                <ArrowForwardIosOutlinedIcon sx={{padingLeft: '30px'}} />
+              </a>
             </div>
           </SwiperSlide>
           <SwiperSlide>
@@ -110,6 +123,10 @@ const Collection = () => {
               <div className="collection-card-right">
                 <img src="/assets/crosmobaby.png" className="collection-card-img" />
               </div>
+              <a className="collection-card-btn">
+                VIEW COLLECTION
+                <ArrowForwardIosOutlinedIcon sx={{padingLeft: '30px'}} />
+              </a>
             </div>
           </SwiperSlide>
         </Swiper>

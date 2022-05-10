@@ -1,10 +1,16 @@
 .appHeader {
-  background: transparent !important;
   position: fixed;
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   z-index: 1000;
+  padding: 2%;
+  box-sizing: border-box;
+}
+
+.blur-background {
+  background: linear-gradient(180deg, rgba(21,3,82,0.8) 62%, rgba(255,255,255,0) 100%);
 }
 
 .tabs {
@@ -13,14 +19,14 @@
   width: 100%;
 }
 
-.menuItems {
-  display: flex;
+.menu-items {
+  display: none;
   margin-top: 30px;
   justify-content: space-around;
   width: 100%;
 }
 
-.menuItems a {
+.menu-items a {
   font-family: 'Catamaran';
   font-style: normal;
   font-weight: 500;
@@ -32,26 +38,25 @@
   text-decoration: none;
 }
 
-.menuItems span {
+.menu-items span:hover {
   border-bottom: 5px solid #FFB300;
   padding-bottom: 12px;
 }
 
 .desktop-logo {
   display: none;
-  margin-right: 28px;
   width: 92px;
   height: 106px;
-  margin-top: 27px;
-  margin-left: 28px;
 }
 
 .mobile-logo {
-  display: flex;
-  width: 92px;
-  height: 106px;
-  margin-right: 2px;
-  margin-top: 27px; 
+  width: 50px;
+  height: fit-content;
+}
+
+.discord-link {
+  width: 54px;
+  height: 54px;
 }
 
 @media only screen and (min-width: 769px) {
@@ -61,5 +66,9 @@
 
   .mobile-logo {
     display: none;
+  }
+
+  .menu-items {
+    display: flex;
   }
 }

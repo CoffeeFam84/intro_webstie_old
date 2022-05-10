@@ -8,5 +8,15 @@
 .content-body {
   background-image: url('/public/assets/bg2.png');
   /* background-repeat: no-repeat; */
+  background-size: cover;
   background-position: right;
+}
+
+@media only screen and (max-width: 769px) {
+  .content-body {
+    background-image: url('/public/assets/mobile-bg.png');
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-position: right;
+  }
 }
