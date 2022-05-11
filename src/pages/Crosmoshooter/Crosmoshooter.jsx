@@ -15,7 +15,7 @@ const Crosmoshooter = () => {
         </span>
       </div>
       <div className="cromoshooter-body">
-        <video>
+        <video width='100%' >
           <source src='https://youtu.be/CDFxKw9W6Ds' />
           Your browser does not support the video tag.
         </video>
