@@ -5,7 +5,7 @@ import "./About.css";
 
 const About = () => {
   return (
-    <div>
+    <div className="container" id="about">
       <div className="about-header">
         <div className="about-title">
           About The Crosmonauts NFT Collection
@@ -14,7 +14,7 @@ const About = () => {
       </div>
       <div className="about-body">
         <div>
-          <div  className="about-desc">
+          <div className="about-desc">
             We are a community oriented NFT Project on Cronos,
               Cronos is an EVM compatible blockchain with low fees.
             <br />
@@ -22,10 +22,10 @@ const About = () => {
             Check out our roadmap below and join our discord to 
               keep up with the latest news and meet the team!
           </div>
-          <button className="btn-discord">
+          <a className="crosmo-btn">
             JOIN DISCORD
-            <ArrowForwardIosOutlinedIcon sx={{ paddingLeft: '19.07px'}} />
-          </button>
+            <ArrowForwardIosOutlinedIcon sx={{ paddingLeft: '10px'}} />
+          </a>
         </div>
         <div className="about-img">
           <img src="/assets/crosmonauts.png" />

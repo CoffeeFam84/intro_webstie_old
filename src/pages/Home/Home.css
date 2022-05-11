@@ -1,6 +1,18 @@
 .home {
   background-image: url('/public/assets/bg1.png');
-  height: 1066px;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.inner-home {
+  min-height: 100vh;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: stretch;
 }
 
 .img-title-div {
@@ -9,8 +21,8 @@
 }
 
 .img-title {
-  margin-top: 256px;
-  width: 80%;
+  margin-top: 25vh;
+  width: 70%;
   height: fit-content;
   z-index: 999;
 }
@@ -19,15 +31,12 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  font-family: 'Catamaran';
-  font-style: normal;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 23px;
   line-height: 29px;
   text-align: center;
   letter-spacing: 0.05em;
-  color: white;
-  margin-top: -77px;
+  /* margin-top: -10px; */
 }
 
 .subtitle span {
@@ -35,59 +44,56 @@
 }
 
 .img-craft-1 {
-  position: absolute;
-  top: 121px;
   z-index: 998;
+  margin-top: -8%;
+  max-width: 35%;
+  margin-left: 10%;
 }
 
 .img-craft-2 {
-  position: absolute;
-  right: 0px;
-  top: 204px;
+  float: right;
+  margin-top: -8%;
+  margin-right: 10%;
+  max-width: 30%;
 }
 
-.img-craft-1-mobile {
-  position: absolute;
-  display: none;
+.home-arrow {
+  display: flex;
+  justify-content: center;
 }
 
-.img-craft-2-mobile {
-  position: absolute;
-  display: none;
+.home-arrow a {
+  cursor: pointer;
+}
+
+.home-arrow img {
+  width: 30px;
 }
 
 @media only screen and (max-width: 769px) {
   .home {
-    height: 692px;
+    /* height: 692px; */
   }
   .subtitle {
     flex-direction: row;
     font-size: 12px;
     line-height: 12px;
-    margin-top: -6px;
   }
 
   .img-title {
-    margin-top: 131px;
+    margin-top: 20vh;
+    width: 70%;
   }
 
   .img-craft-1 {
-    display: none;
+    max-width: 100%;
+    margin-left: -18%;
+    margin-top: 0;
   }
 
   .img-craft-2 {
-    display: none;
-  }
-
-  .img-craft-1-mobile {
-    display: block;
-    top: 226px;
-    left: 0;
-  }
-  
-  .img-craft-2-mobile {
-    display: block;
-    top: 136px;
-    right: 0px;
+    max-width: 80%;
+    margin-right: -25%;
+    margin-top: 0;
   }
 }

@@ -14,8 +14,8 @@
   font-family: 'Catamaran';
   font-style: normal;
   font-weight: 400;
-  font-size: 48px;
-  line-height: 79px;
+  font-size: 40px;
+  line-height: 56px;
   text-align: center;
   letter-spacing: 0.25em;
   text-transform: uppercase;
@@ -33,9 +33,6 @@
 
 .collection-body {
   margin-top: 78px;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
   background: radial-gradient(36.57% 86.56% at 74.71% 48.01%, #1A0366 0%, #0D0233 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
   box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.35);
   border-radius: 42px;
@@ -45,8 +42,8 @@
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  margin-bottom: 140px;
-  padding: 4% 9%;
+  margin-bottom: 54px;
+  padding: 4% 7%;
 }
 
 .collection-card-left {
@@ -56,22 +53,16 @@
 }
 
 .collection-card-left-title {
-  font-family: 'Catamaran';
-  font-style: normal;
   font-weight: 500;
-  font-size: 72px;
-  line-height: 118px;
-
-  color: #FFFFFF;
+  font-size: 50px;
+  line-height: 90px;
   margin-bottom: 8px;
 }
 
 .collection-card-left-desc {
   max-width: 687px;
-  font-family: 'Catamaran';
-  font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 15px;
   line-height: 153%;
   /* or 37px */
 
@@ -79,35 +70,23 @@
   margin-bottom: 50px;
 }
 
-.collection-card-left-btn {
-  width: 387px;
-  height: 110px;
-  font-family: 'Catamaran';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 52px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
+.collection-card-left-desc p {
+  width: 80%;
+}
 
-  color: #FFFFFF;
-  background: radial-gradient(68.1% 536.43% at 45.98% 26.29%, #1427B3 23.44%, #280E8A 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-  box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.35);
-  border-radius: 30px;
+.collection-card-left button {
+  max-width: 375px
 }
 
 .collection-card-right {
-  /* width: 50%; */
-  position: relative;
   display: flex;
+  justify-content: end;
+  align-items: center;
 }
 
 .collection-card-img {
-  /* position: absolute; */
-  /* top: 0px;
-  left: 0px; */
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: fit-content;
   z-index: 999;
 }
 
@@ -139,10 +118,10 @@
   opacity: 1;
   background: rgba(0, 0, 0, 0.2);
   border: 3px solid #FFFFFF;
-  margin-top: 30px !important;
+  /* margin-top: 30px !important; */
   margin-left: 75px !important;
   margin-right: 75px !important;
-  margin-bottom: 47px !important;
+  margin-bottom: 30px !important;
 }
 
 .swiper-pagination-bullet-active {
@@ -156,8 +135,8 @@
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center;
-  height: 100px;
-  width: 100px;
+  height: 50px;
+  width: 50px;
 }
 
 .swiper-button-next::after {
@@ -169,8 +148,8 @@
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center;
-  height: 100px;
-  width: 100px;
+  height: 50px;
+  width: 50px;
 }
 
 .swiper-button-prev::after {
@@ -190,6 +169,7 @@
   }
   .collection-card {
     flex-direction: column;
+    padding: 42px 30px 60px 30px;
   }
 
   .collection-card-left-title {
@@ -199,6 +179,11 @@
 
   .collection-card-left-desc {
     font-size: 20px;
+    margin-bottom: 0px;
+  }
+
+  .collection-card-left-desc p {
+    width: 100%;
   }
 
   .collection-card-left-desc span {
@@ -206,8 +191,12 @@
   }
   
   
-  .collection-card-left-btn {
+  .collection-card-left button {
     display: none;
+  }
+
+  .collection-card-img {
+    width: 100%;
   }
 
   .collection-card-btn {

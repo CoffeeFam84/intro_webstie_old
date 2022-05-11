@@ -3,13 +3,48 @@
   font-style: normal;
   color: white;
   background-color: #150352;
+  overflow: hidden;
 }
 
 .content-body {
   background-image: url('/public/assets/bg2.png');
   /* background-repeat: no-repeat; */
   background-size: cover;
-  background-position: right;
+  background-position: center;
+}
+
+.container {
+  max-width: 1440px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.crosmo-btn {
+  font-family: 'Catamaran';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background: radial-gradient(68.1% 536.43% at 45.98% 26.29%, #1427B3 23.44%, #280E8A 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.35);
+  border-radius: 20px;
+
+  padding: 10px 25px;
+}
+
+a {
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 769px) {
@@ -18,5 +53,9 @@
     /* background-repeat: no-repeat; */
     background-size: cover;
     background-position: right;
+  }
+
+  .crosmo-btn {
+    margin: 10px 0;
   }
 }

@@ -5,37 +5,24 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import MenuItem from '@mui/material/MenuItem';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import cx from 'classnames';
 import './Header.css';
 
-const pages = ['HOME', 'ABOUT ', 'CROSMOSHOOTER', 'COLLECTIONS', 'ROADMAP'];
+const Header = (props) => {
 
-const Header = () => {
   const [anchorElNav, setAnchorElNav] = useState(null);
-  const [anchorElUser, setAnchorElUser] = useState(null);
   const [headerShow, setHeaderShow] = useState(false);
 
-  const [value, setValue] = useState(0);
-
-  const handleChange = (e, newValue) => {
-    setValue(newValue);
-  }
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
-  };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
   };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
 
   const stickHeader = () => {
     let windowHeight = window.scrollY;
@@ -52,55 +39,87 @@ const Header = () => {
 
   return (
     <div className={cx("appHeader", {"blur-background": headerShow})}>
+      <div className="container inner-menu">
         <img src="/assets/LogoShirt.png" className='desktop-logo' />
 
-        <Box sx={{  display: { xs: 'flex', md: 'none' } }}>
-          <IconButton
-            size="large"
-            aria-label="account of current user"
-            aria-controls="menu-appbar"
-            aria-haspopup="true"
-            onClick={handleOpenNavMenu}
-            color="inherit"
-          >
-            <MenuIcon />
-          </IconButton>
-          <Menu
-            id="menu-appbar"
-            anchorEl={anchorElNav}
-            anchorOrigin={{
-              vertical: 'bottom',
-              horizontal: 'left',
-            }}
-            keepMounted
-            transformOrigin={{
-              vertical: 'top',
-              horizontal: 'left',
-            }}
-            open={Boolean(anchorElNav)}
-            onClose={handleCloseNavMenu}
-            sx={{
-              display: { xs: 'block', md: 'none' },
-            }}
-          >
-            {pages.map((page) => (
-              <MenuItem key={page} onClick={handleCloseNavMenu}>
-                <Typography textAlign="center">{page}</Typography>
+          <Box sx={{  display: { xs: 'flex', md: 'none' } }}>
+            <IconButton
+              size="large"
+              aria-label="account of current user"
+              aria-controls="menu-appbar"
+              aria-haspopup="true"
+              onClick={handleOpenNavMenu}
+              color="inherit"
+            >
+              <MenuIcon />
+            </IconButton>
+            <Menu
+              id="menu-appbar"
+              anchorEl={anchorElNav}
+              anchorOrigin={{
+                vertical: 'bottom',
+                horizontal: 'left',
+              }}
+              keepMounted
+              transformOrigin={{
+                vertical: 'top',
+                horizontal: 'left',
+              }}
+              open={Boolean(anchorElNav)}
+              onClose={handleCloseNavMenu}
+              sx={{
+                display: { xs: 'block', md: 'none' },
+              }}
+            >
+              <MenuItem >
+                <Link to="home" spy={true} smooth={true}>
+                  <Typography textAlign="center">HOME</Typography>
+                </Link>
               </MenuItem>
-            ))}
-          </Menu>
-        </Box>
-        <img src="/assets/LogoShirt.png" className='mobile-logo' />
+              <MenuItem >
+                <Link to="about" spy={true} smooth={true} offset={-10}>
+                  <Typography textAlign="center">ABOUT</Typography>
+                </Link>
+              </MenuItem>
+              <MenuItem >
+                <Link to="crosmoshooter" spy={true} smooth={true} offset={-90}>
+                  <Typography textAlign="center">CROSMOSHOOTER</Typography>
+                </Link>
+              </MenuItem>
+              <MenuItem >
+                <Link to="collections" spy={true} smooth={true} offset={-90}>
+                  <Typography textAlign="center">COLLECTIONS</Typography>
+                </Link>
+              </MenuItem>
+              <MenuItem >
+                <Link to="roadmap" spy={true} smooth={true} offset={-90}>
+                  <Typography textAlign="center">ROADMAP</Typography>
+                </Link>
+              </MenuItem>
+            </Menu>
+          </Box>
+          <img src="/assets/LogoShirt.png" className='mobile-logo' />
 
-        <div className="menu-items">
-          <Link to="#" ><span>HOME</span></Link>
-          <Link to="#" ><span>ABOUT</span></Link>
-          <Link to="#" ><span>CROSMOSHOOTER</span></Link>
-          <Link to="#" ><span>COLLECTIONS</span></Link>
-          <Link to="#" ><span>ROADMAP</span></Link>
-        </div>
-        <img src="/assets/discord.svg" className='discord-link' />
+          <div className="menu-items">
+            <Link to="home" spy={true} smooth={true}>
+              <span >HOME</span>
+            </Link>
+            <Link to="about" spy={true} smooth={true} offset={-10}>
+              <span >ABOUT</span>
+            </Link>
+            <Link to="crosmoshooter" spy={true} smooth={true} offset={-90}>
+              <span >CROSMOSHOOTER</span>
+            </Link>
+            <Link to="collections" spy={true} smooth={true} offset={-90}>
+              <span >COLLECTIONS</span>
+            </Link>
+            <Link to="roadmap" spy={true} smooth={true} offset={-90}>
+              <span >ROADMAP</span>
+            </Link>
+          </div>
+          <img src="/assets/discord.svg" className='discord-link' />
       </div>
+    </div>
   );
 };
 export default Header;

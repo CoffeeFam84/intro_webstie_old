@@ -4,7 +4,7 @@ import "./Crosmoshooter.css";
 
 const Crosmoshooter = () => {
   return (
-    <div className="crosmoshooter">
+    <div className="container crosmoshooter" id="crosmoshooter">
       <div className="crosmoshooter-header">
         <span className="crosmoshooter-title">Crosmoshooter</span>
         <span className="vertical-bar"></span>
@@ -36,14 +36,14 @@ const Crosmoshooter = () => {
           arcade shooter game with endless 
           levels,
         </span>
-        <button className="crosmoshooter-btn">
+        <a className="crosmo-btn">
           BUY NOW
           <ArrowForwardIosOutlinedIcon sx={{paddingLeft: '20px'}}/>
-        </button>
-        <button className="crosmoshooter-btn">
+        </a>
+        <a className="crosmo-btn">
           PLAY NOW
           <ArrowForwardIosOutlinedIcon sx={{paddingLeft: '20px'}}/>
-        </button>
+        </a>
       </div>
     </div>
   );

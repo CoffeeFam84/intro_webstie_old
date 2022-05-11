@@ -1,28 +1,25 @@
 .appHeader {
   position: fixed;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   z-index: 1000;
-  padding: 2%;
-  box-sizing: border-box;
+  width: 100%;
 }
 
 .blur-background {
   background: linear-gradient(180deg, rgba(21,3,82,0.8) 62%, rgba(255,255,255,0) 100%);
 }
 
-.tabs {
+.inner-menu {
+  margin: 1% auto !important;
   display: flex;
-  justify-content: space-around;
-  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
 }
 
 .menu-items {
   display: none;
-  margin-top: 30px;
   justify-content: space-around;
+  align-items: center;
   width: 100%;
 }
 
@@ -30,9 +27,8 @@
   font-family: 'Catamaran';
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 39px;
-  padding-bottom: 20px;
   letter-spacing: 0.05em;
   color: white;
   text-decoration: none;
@@ -45,8 +41,8 @@
 
 .desktop-logo {
   display: none;
-  width: 92px;
-  height: 106px;
+  width: 50px;
+  height: fit-content;
 }
 
 .mobile-logo {

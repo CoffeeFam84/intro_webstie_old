@@ -17,7 +17,7 @@ const Collection = () => {
   };
   const isMobile = useMediaQuery({ query: '(max-width: 769px)' });
   return (
-    <div className="collection">
+    <div className="collection container" id="collections">
       <div className="collection-header">
          <div className="collection-title">NFT COLLECTIONS</div>
          <span className="horizental-bar"></span>
@@ -44,7 +44,7 @@ const Collection = () => {
                   game. Holders of Crosmocrafts use their own NFT to play the game, 
                   and blow up some asteroids and enemy spacehips.</span>
                 </div>
-                <button className="collection-card-left-btn">
+                <button className="crosmo-btn">
                   VIEW COLLECTION
                   <ArrowForwardIosOutlinedIcon sx={{padingLeft: '30px'}} />
                 </button>
@@ -63,13 +63,15 @@ const Collection = () => {
               <div className="collection-card-left">
                 <div className="collection-card-left-title">Crosmopilots</div>
                 <div className="collection-card-left-desc">
-                  An upcoming collection that will further expand the 
-                  gamification of the Crosmonaut NFT project, these pilots 
-                  will work as boosters in-game for Crosmoshooter. 
-                  Providing a variety of in-game bonusses depending on 
-                  the type of pilot that is being used.
+                  <p >
+                    An upcoming collection that will further expand the 
+                    gamification of the Crosmonaut NFT project, these pilots 
+                    will work as boosters in-game for Crosmoshooter. 
+                    Providing a variety of in-game bonusses depending on 
+                    the type of pilot that is being used.
+                  </p>
                 </div>
-                <button className="collection-card-left-btn">
+                <button className="crosmo-btn">
                   COMING SOON
                   <ArrowForwardIosOutlinedIcon sx={{padingLeft: '30px'}} />
                 </button>
@@ -88,9 +90,11 @@ const Collection = () => {
               <div className="collection-card-left">
                 <div className="collection-card-left-title">Crosmonauts</div>
                 <div className="collection-card-left-desc">
-                  Among the first NFT collections on Cronos, the Crosmonauts is  an extremely limited collection of 1000 unique NFT's. The OG collection of this project.
+                  <p >
+                    Among the first NFT collections on Cronos, the Crosmonauts is  an extremely limited collection of 1000 unique NFT's. The OG collection of this project.
+                  </p>
                 </div>
-                <button className="collection-card-left-btn">
+                <button className="crosmo-btn">
                   COMING SOON
                   <ArrowForwardIosOutlinedIcon sx={{padingLeft: '30px'}} />
                 </button>
@@ -109,13 +113,15 @@ const Collection = () => {
               <div className="collection-card-left">
                 <div className="collection-card-left-title">Crosmobabies</div>
                 <div className="collection-card-left-desc">
-                  The Crosmobabies were another free airdrop to all 
-                  Crosmonaut holders, we aim to  continuesly reward 
-                  holders in various ways.
-                  These little babies are the perfect companion to your 
-                  Crosmonaut NFT.
+                  <p >
+                    The Crosmobabies were another free airdrop to all 
+                    Crosmonaut holders, we aim to  continuesly reward 
+                    holders in various ways.
+                    These little babies are the perfect companion to your 
+                    Crosmonaut NFT.
+                  </p>
                 </div>
-                <button className="collection-card-left-btn">
+                <button className="crosmo-btn">
                   VIEW COLLECTION
                   <ArrowForwardIosOutlinedIcon sx={{padingLeft: '30px'}} />
                 </button>

@@ -10,47 +10,32 @@
 }
 
 .merchandise-title {
-  font-family: 'Catamaran';
-  font-style: normal;
   font-weight: 400;
-  font-size: 48px;
-  line-height: 79px;
-  text-align: center;
+  font-size: 40px;
+  line-height: 56px;
   letter-spacing: 0.25em;
   text-transform: uppercase;
-
-  color: #FFFFFF;
 }
 
 .merchandise-card {
   background: radial-gradient(36.57% 86.56% at 74.71% 48.01%, #1A0366 0%, #0D0233 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
   box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.35);
   border-radius: 42px;
-  margin-top: 104px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
+  margin-top: 80px;
   box-sizing: border-box;
-  padding-left: 8%;
-  padding-right: 8%;
-  padding-top: 70px;
-  padding-bottom: 148px;
+  padding: 34px 8%;
 }
 
 .merchandise-card-title {
-  font-family: 'Catamaran';
-  font-style: normal;
   font-weight: 500;
-  font-size: 72px;
-  line-height: 118px;
+  font-size: 50px;
+  line-height: 80px;
 
-  color: #FFFFFF;
 }
 
 .merchandise-body {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   align-items: stretch;
 }
 
@@ -64,7 +49,7 @@
   font-family: 'Catamaran';
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 153%;
   /* or 37px */
 
@@ -76,52 +61,18 @@
   display: flex;
 }
 
-.merchandise-btn {
-  width: 325px;
-  height: 84px;
-  background: radial-gradient(68.1% 536.43% at 45.98% 26.29%, #1427B3 23.44%, #280E8A 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-  box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.35);
-  border-radius: 30px;
-  font-family: 'Catamaran';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 52px;
-
-  color: #FFFFFF;
-  margin-right: 12px;
+.merchandise-btn-wrapper img {
+  margin-left: 20px;
+  width: 60px;
 }
 
-.merchandise-right {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-}
-
-.merchandise-bigshirt {
+.merchandise-shirts {
   height: fit-content;
-}
-
-.merchandise-smallshirt {
-  height: fit-content;
+  width: 100%;
 }
 
 .merchandise-mobile-btn {
-  display: none;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Catamaran';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 28px;
-  line-height: 46px;
-  margin-top: 20px;
-
-  color: #FFFFFF;
-  padding: 3px 19px 3px 19px;
-  background: radial-gradient(68.1% 536.43% at 45.98% 26.29%, #1427B3 23.44%, #280E8A 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-  box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.35);
-  border-radius: 30px;
+  display: none !important;
 }
 
 @media only screen and (max-width: 769px) {
@@ -140,23 +91,14 @@
     display: none;
   }
 
-  .merchandise-bigshirt {
-    width: 50%;
-  }
-  
-  .merchandise-smallshirt {
-    width: 35%;
-  }
-
   .merchandise-card {
     padding-bottom: 33px;
-    padding-top: 27px;
     margin-top: 40px;
   }
   .merchandise-body {
     flex-direction: column;
   }
   .merchandise-mobile-btn {
-    display: flex;
+    display: flex !important;
   }
 }

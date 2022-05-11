@@ -24,9 +24,10 @@
 
 .roadmap-body {
   /* height: 1032px; */
+  text-align: center;
 }
 
 .roadmap-img {
+  margin-top: 30px;
   width: 100%;
-  height: fit-content;
 }

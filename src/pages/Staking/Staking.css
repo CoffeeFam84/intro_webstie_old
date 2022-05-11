@@ -10,11 +10,9 @@
 }
 
 .staking-title {
-  font-family: 'Catamaran';
-  font-style: normal;
   font-weight: 400;
-  font-size: 48px;
-  line-height: 79px;
+  font-size: 40px;
+  line-height: 56px;
   text-align: center;
   letter-spacing: 0.25em;
   text-transform: uppercase;
@@ -30,15 +28,11 @@
   justify-content: space-around;
   align-items: center;
   margin-top: 42px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
   box-sizing: border-box;
-  padding: 6.5%;
+  padding: 91px 130px;
 }
 
 .staking-card-left {
-  flex-grow: 2;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -54,39 +48,20 @@
   z-index: 900;
 }
 
-.staking-card-right {
-  flex-grow: 1;
-}
-
 .staking-card-desc {
   font-family: 'Catamaran';
   font-style: normal;
   font-weight: 500;
-  font-size: 36px;
-  line-height: 59px;
+  font-size: 23px;
+  line-height: 43px;
   max-width: 960px;
-
+  margin-bottom: 50px;
   color: #FFFFFF;
   z-index: 901;
 }
 
-.staking-btn {
-  font-family: 'Catamaran';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 52px;
-  text-align: center;
-
-  color: #FFFFFF;
-  background: radial-gradient(68.1% 536.43% at 45.98% 26.29%, #1427B3 23.44%, #280E8A 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-  box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.35);
-  border-radius: 30px;
-  margin-top: 6.5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 30px;
+.staking-btn-wrapper .crosmo-btn {
+  max-width: 400px;
 }
 
 .staking-card-img {
@@ -102,10 +77,12 @@
 
   .staking-card {
     flex-direction: column;
+    padding: 43px 30px;
   }
   .staking-card-desc {
     font-size: 20px;
     line-height: 33px;
+    margin-bottom: 0px;
   }
 
   .staking-card-img {

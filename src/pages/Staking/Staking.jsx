@@ -4,7 +4,7 @@ import './Staking.css';
 
 const Staking = () => {
   return (
-    <div className="staking">
+    <div className="staking container">
       <div className="staking-header">
         <div className="staking-title">
           STAKING
@@ -22,10 +22,10 @@ const Staking = () => {
             <img src="/assets/cyborgswap.png" className="staking-card-img-mobile" />
           </div>
           <div className="staking-btn-wrapper">
-            <button className="staking-btn">
+            <a className="crosmo-btn">
                CYBORGSWAP
               <ArrowForwardIosOutlinedIcon sx={{padingLeft: '30px'}} />
-            </button>
+            </a>
           </div>
         </div>
         <div className="staking-card-right">
