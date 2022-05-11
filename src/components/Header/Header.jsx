@@ -44,7 +44,7 @@ const Header = (props) => {
           <img src="/assets/LogoShirt.png" />
         </Link>
 
-          <Box sx={{  display: { xs: 'flex', md: 'none' } }}>
+          <Box className="mobile-menu">
             <IconButton
               size="large"
               aria-label="account of current user"

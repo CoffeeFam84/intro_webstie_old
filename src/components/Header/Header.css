@@ -16,6 +16,10 @@
   box-sizing: border-box;
 }
 
+.mobile-menu {
+  display: flex;
+}
+
 .menu-items {
   display: none;
   justify-content: space-around;
@@ -69,5 +73,9 @@
 
   .menu-items {
     display: flex;
+  }
+
+  .mobile-menu {
+    display: none;
   }
 }

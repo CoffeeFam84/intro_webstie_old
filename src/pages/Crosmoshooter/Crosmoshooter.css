@@ -95,6 +95,7 @@
 
   .crosmoshooter-footer {
     flex-direction: column;
+    align-items: stretch;
     padding: 15px;
   }
 
