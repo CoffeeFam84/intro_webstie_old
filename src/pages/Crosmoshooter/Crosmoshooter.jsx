@@ -15,7 +15,7 @@ const Crosmoshooter = () => {
         </span>
       </div>
       <div className="cromoshooter-body">
-        <video></video>
+        <video src='https://youtu.be/CDFxKw9W6Ds' />
       </div>
       <div className="crosmoshooter-footer">
         <span className="crosmo-header-desc">
