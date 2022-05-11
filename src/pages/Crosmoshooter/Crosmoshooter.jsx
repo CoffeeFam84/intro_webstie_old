@@ -15,10 +15,8 @@ const Crosmoshooter = () => {
         </span>
       </div>
       <div className="cromoshooter-body">
-        <video width='100%' >
-          <source src='https://youtu.be/CDFxKw9W6Ds' />
-          Your browser does not support the video tag.
-        </video>
+        <iframe width='100%' height='100%'
+        src="https://youtu.be/CDFxKw9W6Ds?autoplay=1&loop=1"></iframe>
       </div>
       <div className="crosmoshooter-footer">
         <span className="crosmo-header-desc">

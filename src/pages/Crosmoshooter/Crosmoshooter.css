@@ -52,6 +52,11 @@
   background: black;
 }
 
+.cromoshooter-body iframe {
+  border: 0px;
+}
+
+
 .crosmoshooter-footer {
   display: flex;
   justify-content: space-around;

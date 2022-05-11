@@ -27,10 +27,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin-top: 110px;
-  padding-left: 85px;
-  padding-right: 85px;
-  margin-bottom: 150px;
+  padding: 110px 85px;
 }
 
 @media only screen and (max-width: 769px) {
