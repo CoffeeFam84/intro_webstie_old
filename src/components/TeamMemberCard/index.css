@@ -1,47 +1,50 @@
 .team-member {
   position: relative;
-  margin-top: 286px;
+  margin-top: 150px;
   background: radial-gradient(36.57% 86.56% at 74.71% 48.01%, #1A0366 0%, #0D0233 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
   box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.35);
   border-radius: 42px;
-
-  width: 319px;
-  height: 307px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 10px;
 }
 
 .member-avatar {
   z-index: 997;
-  position: absolute;
-  top: -163px;
+  width: 200px;
+  margin-top: -140px;
 }
 
 .member-name {
   font-family: 'Catamaran';
   font-style: normal;
   font-weight: 900;
-  font-size: 32px;
-  line-height: 52px;
+  font-size: 24px;
+  line-height: 30px;
   text-align: center;
 
   color: #FFFFFF;
-  margin-top: 192px;
+  margin-top: 30px;
 }
 
 .member-role {
   font-family: 'Catamaran';
   font-style: normal;
   font-weight: 300;
-  font-size: 20px;
-  line-height: 33px;
+  font-size: 16px;
+  line-height: 28px;
   text-align: center;
 
   color: #FFB300;
 }
 
 .member-twitter {
-  width: 37px;
-  height: 37px;
+  width: 20px;
+  height: 20px;
   position: absolute;
-  right: 31px;
-  bottom: 31px;
+  right: 15px;
+  bottom: 33px;
 }

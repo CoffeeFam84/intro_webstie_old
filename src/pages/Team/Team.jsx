@@ -4,7 +4,7 @@ import './Team.css';
 
 const Team = () => {
   return (
-    <div className="team">
+    <div className="team container">
       <div className="team-header">
         <div className="team-title">
           THE TEAM
