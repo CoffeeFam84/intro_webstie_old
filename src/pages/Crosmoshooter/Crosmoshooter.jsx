@@ -16,7 +16,7 @@ const Crosmoshooter = () => {
       </div>
       <div className="cromoshooter-body">
         <iframe width='100%' height='100%'
-        src="https://www.youtube.com/embed/XZe1fthBVXE?wmode=opaque&start=0"></iframe>
+        src="https://www.youtube.com/embed/XZe1fthBVXE?wmode=opaque&autoplay=1&controls=0&loop=1&mute=1"></iframe>
       </div>
       <div className="crosmoshooter-footer">
         <span className="crosmo-header-desc">
