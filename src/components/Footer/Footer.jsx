@@ -29,13 +29,15 @@ const Footer = () => {
             <div style={{color: 'white'}} >Not affiliated with crypto.com</div>
           </div>
           <div className="footer-social">
-            <img src="/assets/discord-1.svg" />
-            <img src="/assets/twitter-1.svg" />
-            <img src="/assets/instagram.svg" />
-            <img src="/assets/M.svg" />
+            <a href='https://discord.com/invite/G876eZzjpg' target='_blank'><img src="/assets/discord-1.svg" /></a>
+            <a href='https://twitter.com/crosmonaut' target='_blank'><img src="/assets/twitter-1.svg" /></a>
+            <a href='https://www.instagram.com/crosmonauts/' target='_blank'><img src="/assets/instagram.svg" /></a>
+            <a href='https://medium.com/@crosmonaut' target='_blank'><img src="/assets/M.svg" /></a>
           </div>
           <div className="footer-copyright">
-            Copyright © Crosmonaut NFT | All rights reserved - Privacy policy - Terms and conditions
+            Copyright © Crosmonaut NFT | All rights reserved - 
+            <a href="assets/Disclaimer.pdf" target="_blank">Privacy policy</a> - 
+            <a href="assets/Disclaimer.pdf" target="_blank">Terms and conditions</a>
           </div>
           <div className="footer-contact">Contact: crosmonautsnft@gmail.com</div>
         </div>
