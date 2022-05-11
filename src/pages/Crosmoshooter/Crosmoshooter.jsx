@@ -40,7 +40,8 @@ const Crosmoshooter = () => {
           BUY NOW
           <ArrowForwardIosOutlinedIcon sx={{paddingLeft: '20px'}}/>
         </a>
-        <a className="crosmo-btn">
+        
+        <a className="crosmo-btn" href="https://crosmoshooter.com/" target="_blank">
           PLAY NOW
           <ArrowForwardIosOutlinedIcon sx={{paddingLeft: '20px'}}/>
         </a>

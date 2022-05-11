@@ -40,7 +40,9 @@ const Header = (props) => {
   return (
     <div className={cx("appHeader", {"blur-background": headerShow})}>
       <div className="container inner-menu">
-        <img src="/assets/LogoShirt.png" className='desktop-logo' />
+        <Link to="home" spy={true} smooth={true} className='desktop-logo'>
+          <img src="/assets/LogoShirt.png" />
+        </Link>
 
           <Box sx={{  display: { xs: 'flex', md: 'none' } }}>
             <IconButton
@@ -51,7 +53,7 @@ const Header = (props) => {
               onClick={handleOpenNavMenu}
               color="inherit"
             >
-              <MenuIcon />
+              <MenuIcon fontSize='large'  />
             </IconButton>
             <Menu
               id="menu-appbar"
@@ -98,7 +100,9 @@ const Header = (props) => {
               </MenuItem>
             </Menu>
           </Box>
-          <img src="/assets/LogoShirt.png" className='mobile-logo' />
+          <Link to="home" spy={true} smooth={true}>
+            <img src="/assets/LogoShirt.png" className='mobile-logo' />
+          </Link>
 
           <div className="menu-items">
             <Link to="home" spy={true} smooth={true}>
@@ -117,7 +121,9 @@ const Header = (props) => {
               <span >ROADMAP</span>
             </Link>
           </div>
-          <img src="/assets/discord.svg" className='discord-link' />
+          <a href='https://discord.com/invite/G876eZzjpg' target='_blank'>
+            <img src="/assets/discord.svg" className='discord-link' />
+          </a>
       </div>
     </div>
   );

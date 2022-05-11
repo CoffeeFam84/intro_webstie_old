@@ -22,7 +22,7 @@ const Staking = () => {
             <img src="/assets/cyborgswap.png" className="staking-card-img-mobile" />
           </div>
           <div className="staking-btn-wrapper">
-            <a className="crosmo-btn">
+            <a className="crosmo-btn" href='https://cyborgswap.io/' target='_blank'>
                CYBORGSWAP
               <ArrowForwardIosOutlinedIcon sx={{padingLeft: '30px'}} />
             </a>

@@ -74,7 +74,7 @@
   width: 80%;
 }
 
-.collection-card-left button {
+.collection-card-left a {
   max-width: 375px
 }
 
@@ -191,7 +191,7 @@
   }
   
   
-  .collection-card-left button {
+  .collection-card-left a {
     display: none;
   }
 

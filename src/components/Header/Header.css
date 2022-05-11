@@ -41,6 +41,9 @@
 
 .desktop-logo {
   display: none;
+}
+
+.desktop-logo img {
   width: 50px;
   height: fit-content;
 }

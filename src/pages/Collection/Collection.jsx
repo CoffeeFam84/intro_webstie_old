@@ -44,15 +44,15 @@ const Collection = () => {
                   game. Holders of Crosmocrafts use their own NFT to play the game, 
                   and blow up some asteroids and enemy spacehips.</span>
                 </div>
-                <button className="crosmo-btn">
+                <a className="crosmo-btn" href='https://app.ebisusbay.com/collection/crosmocrafts' target="_blank">
                   VIEW COLLECTION
                   <ArrowForwardIosOutlinedIcon sx={{padingLeft: '30px'}} />
-                </button>
+                </a>
               </div>
               <div className="collection-card-right">
                 <img src="/assets/craft3.png" className="collection-card-img" />
               </div>
-              <a className="collection-card-btn">
+              <a className="collection-card-btn" href='https://app.ebisusbay.com/collection/crosmocrafts' target="_blank">
                 VIEW COLLECTION
                 <ArrowForwardIosOutlinedIcon sx={{padingLeft: '30px'}} />
               </a>
@@ -71,10 +71,10 @@ const Collection = () => {
                     the type of pilot that is being used.
                   </p>
                 </div>
-                <button className="crosmo-btn">
+                <a className="crosmo-btn">
                   COMING SOON
                   <ArrowForwardIosOutlinedIcon sx={{padingLeft: '30px'}} />
-                </button>
+                </a>
               </div>
               <div className="collection-card-right">
                 <img src="/assets/crosmopilot.png" className="collection-card-img" />
@@ -94,15 +94,15 @@ const Collection = () => {
                     Among the first NFT collections on Cronos, the Crosmonauts is  an extremely limited collection of 1000 unique NFT's. The OG collection of this project.
                   </p>
                 </div>
-                <button className="crosmo-btn">
-                  COMING SOON
+                <a className="crosmo-btn" href='https://app.ebisusbay.com/collection/crosmonauts' target='_blank'>
+                  view collection
                   <ArrowForwardIosOutlinedIcon sx={{padingLeft: '30px'}} />
-                </button>
+                </a>
               </div>
               <div className="collection-card-right">
                 <img src="/assets/crosmonatus1.png" className="collection-card-img" />
               </div>
-              <a className="collection-card-btn">
+              <a className="collection-card-btn" href='https://app.ebisusbay.com/collection/crosmonauts' target='_blank'>
                 VIEW COLLECTION
                 <ArrowForwardIosOutlinedIcon sx={{padingLeft: '30px'}} />
               </a>
@@ -121,15 +121,15 @@ const Collection = () => {
                     Crosmonaut NFT.
                   </p>
                 </div>
-                <button className="crosmo-btn">
+                <a className="crosmo-btn" href='https://app.ebisusbay.com/collection/crosmobabies' target='_blank'>
                   VIEW COLLECTION
                   <ArrowForwardIosOutlinedIcon sx={{padingLeft: '30px'}} />
-                </button>
+                </a>
               </div>
               <div className="collection-card-right">
                 <img src="/assets/crosmobaby.png" className="collection-card-img" />
               </div>
-              <a className="collection-card-btn">
+              <a className="collection-card-btn" href='https://app.ebisusbay.com/collection/crosmobabies' target='_blank'>
                 VIEW COLLECTION
                 <ArrowForwardIosOutlinedIcon sx={{padingLeft: '30px'}} />
               </a>

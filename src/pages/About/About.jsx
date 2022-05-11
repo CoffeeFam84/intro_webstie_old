@@ -22,7 +22,7 @@ const About = () => {
             Check out our roadmap below and join our discord to 
               keep up with the latest news and meet the team!
           </div>
-          <a className="crosmo-btn">
+          <a className="crosmo-btn" href='https://discord.com/invite/G876eZzjpg' target='_blank'>
             JOIN DISCORD
             <ArrowForwardIosOutlinedIcon sx={{ paddingLeft: '10px'}} />
           </a>
