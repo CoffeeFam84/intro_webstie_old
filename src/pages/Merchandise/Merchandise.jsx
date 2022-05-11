@@ -26,11 +26,11 @@ const Merchandise = () => {
               </p>
             </div>
             <div className="merchandise-btn-wrapper">
-              <a className="crosmo-btn">
+              <a className="crosmo-btn" href='https://blklabel.co.uk/' target="_blank">
                 COMING SOON
                 <ArrowForwardIosOutlinedIcon sx={{padingLeft: '30px'}} />
               </a>
-              <img src="/assets/twitter.svg" />
+              <a href="https://twitter.com/Blklabel3" target="_blank"><img src="/assets/twitter.svg" /></a>
             </div>
           </div>
           <div className="merchandise-right">
