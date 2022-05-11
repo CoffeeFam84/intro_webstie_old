@@ -15,7 +15,10 @@ const Crosmoshooter = () => {
         </span>
       </div>
       <div className="cromoshooter-body">
-        <video src='https://youtu.be/CDFxKw9W6Ds' />
+        <video>
+          <source src='https://youtu.be/CDFxKw9W6Ds' />
+          Your browser does not support the video tag.
+        </video>
       </div>
       <div className="crosmoshooter-footer">
         <span className="crosmo-header-desc">
@@ -36,15 +39,18 @@ const Crosmoshooter = () => {
           arcade shooter game with endless 
           levels,
         </span>
-        <a className="crosmo-btn">
-          BUY NOW
-          <ArrowForwardIosOutlinedIcon sx={{paddingLeft: '20px'}}/>
-        </a>
+        <div className="crosmo-footer-btn-wrapper">
+          <a className="crosmo-btn">
+            BUY NOW
+            <ArrowForwardIosOutlinedIcon sx={{paddingLeft: '5px'}}/>
+          </a>
+          
+          <a className="crosmo-btn" href="https://crosmoshooter.com/" target="_blank">
+            PLAY NOW
+            <ArrowForwardIosOutlinedIcon sx={{paddingLeft: '5px'}}/>
+          </a>
+        </div>
         
-        <a className="crosmo-btn" href="https://crosmoshooter.com/" target="_blank">
-          PLAY NOW
-          <ArrowForwardIosOutlinedIcon sx={{paddingLeft: '20px'}}/>
-        </a>
       </div>
     </div>
   );

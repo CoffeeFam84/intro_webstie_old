@@ -1,5 +1,6 @@
 .staking {
-  margin-top: 42px;
+  margin-top: 112px;
+  width: 60% !important;
 }
 
 .staking-header {
@@ -29,7 +30,7 @@
   align-items: center;
   margin-top: 42px;
   box-sizing: border-box;
-  padding: 91px 130px;
+  padding: 91px 70px;
 }
 
 .staking-card-left {
@@ -69,7 +70,9 @@
 }
 
 @media only screen and (max-width: 769px) {
-  
+  .staking {
+    width: 90% !important;
+  }
   .staking-title {
     font-size: 30px;
     line-height: 43px;

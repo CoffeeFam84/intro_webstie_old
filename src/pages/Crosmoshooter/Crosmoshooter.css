@@ -5,6 +5,7 @@
   padding: 50px;
   margin-top: 120px;
   box-sizing: border-box;
+  width: 60% !important;
 }
 
 .crosmoshooter-header {
@@ -14,8 +15,8 @@
 
 .crosmoshooter-title {
   font-weight: 500;
-  font-size: 55px;
-  line-height: 118px;
+  font-size: 40px;
+  line-height: 50px;
 
   color: #FFFFFF;
 
@@ -23,8 +24,8 @@
 }
 
 .vertical-bar {
-  min-width: 69px;
-  height: 10px;
+  min-width: 50px;
+  height: 8px;
   background: #FFB300;
   border-radius: 53.5px;
   transform: rotate(-90deg);
@@ -35,7 +36,7 @@
   max-width: 575px;
 
   font-weight: 400;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 140%;
   /* or 37px */
 
@@ -45,16 +46,16 @@
 }
 
 .cromoshooter-body {
-  max-width: 600px;
-  height: 400px;
-  background: #000;
+  max-width: 70%;
+  height: 250px;
   margin: 4% auto;
+  background: black;
 }
 
 .crosmoshooter-footer {
   display: flex;
   justify-content: space-around;
-  align-items: stretch;
+  align-items: center;
 }
 
 .crosmoshooter-footer a {
@@ -66,7 +67,7 @@
   font-family: 'Catamaran';
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 14px;
   line-height: 153%;
   /* or 31px */
 
@@ -74,19 +75,37 @@
   color: #FFFFFF;
 }
 
+.crosmo-footer-btn-wrapper {
+  display: flex;
+}
+
+@media only screen and (max-width: 1200px) {
+  .crosmo-footer-btn-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .crosmo-footer-btn-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .crosmo-header-desc {
+    display: none;
+  }
+}
 
 @media only screen and (max-width: 769px) {
   .crosmoshooter {
     margin-top: 38px;
     padding: 50px 10px;
+    width: 90% !important;
   }
 
   .crosmoshooter-header {
     padding-left: 20px;
-  }
-
-  .crosmo-header-desc {
-    display: none;
   }
 
   .cromoshooter-body {

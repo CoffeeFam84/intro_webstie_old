@@ -9,11 +9,11 @@ const Partners = () => {
         <div className="horizental-bar"></div>
       </div>
       <div className="partners-body">
-        <img src="/assets/ebisus-logo.png"  />
-        <img src="/assets/Roihua-logo.png"  />
-        <img src="/assets/cyborg-logo.png"  />
-        <img src="/assets/CRmax-logo.png"  />
-        <img src="/assets/blacklabel-logo.png"  />
+        <img src="/assets/ebisus-logo.png" style={{maxWidth: '200px'}} />
+        <img src="/assets/Roihua-logo.png" style={{maxWidth: '200px'}} />
+        <img src="/assets/cyborg-logo.png" style={{maxWidth: '100px'}} />
+        <img src="/assets/CRmax-logo.png" style={{maxWidth: '200px'}} />
+        <img src="/assets/blacklabel-logo.png" style={{maxWidth: '100px'}} />
       </div>
     </div>
   );

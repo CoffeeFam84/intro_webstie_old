@@ -1,5 +1,6 @@
 .merchandise {
   margin-top: 112px;
+  width: 60% !important;
 }
 
 .merchandise-header {
@@ -28,8 +29,8 @@
 
 .merchandise-card-title {
   font-weight: 500;
-  font-size: 50px;
-  line-height: 80px;
+  font-size: 40px;
+  line-height: 60px;
 
 }
 
@@ -76,6 +77,11 @@
 }
 
 @media only screen and (max-width: 769px) {
+  .merchandise {
+    margin-top: 112px;
+    width: 90% !important;
+  }
+
   .merchandise-title {
     font-size: 30px;
     line-height: 43px;
