@@ -37,7 +37,6 @@ const App = () => {
     <div className="app">
       <CookieConsent 
         enableDeclineButton
-        debug={true}
         location="bottom"
         buttonText="ACCEPT"
         cookieName="crosmonautsCookie"
