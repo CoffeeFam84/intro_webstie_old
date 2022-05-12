@@ -12,18 +12,45 @@ import Partners from './pages/Partners/Partners.jsx';
 import Footer from './components/Footer/Footer.jsx';
 import './App.css';
 
+const cookieBarStyle = {
+  background: '#280E8A', 
+  maxWidth: "1440px", 
+  paddingRight: '20px', 
+  display: 'flex', 
+  alignItems: 'center'
+}
+
+const buttonStyle = {
+  color: '#fff',
+  background: "radial-gradient(68.1% 536.43% at 45.98% 26.29%, #1427B3 23.44%, #280E8A 100%)",
+  fontSize: "16px",
+  fontFamily: 'Catamaran'
+}
+
+const declineButtonStyle = {
+  fontSize: "16px",
+  fontFamily: 'Catamaran'
+}
 
 const App = () => {
   return (
     <div className="app">
       <CookieConsent 
+        enableDeclineButton
+        debug={true}
         location="bottom"
         buttonText="ACCEPT"
         cookieName="crosmonautsCookie"
-        style={{background: '#280E8A', maxWidth: "1440px", paddingLeft: '10px'}}
-        buttonStyle={{ color: '#fff', background: "radial-gradient(68.1% 536.43% at 45.98% 26.29%, #1427B3 23.44%, #280E8A 100%)" }}
+        style={cookieBarStyle}
+        buttonStyle={buttonStyle}
+        declineButtonStyle={declineButtonStyle}
       >
-        This website uses cookies to enhance the user experience.
+        <div style={{fontSize: '12px'}}>
+          <div style={{fontSize: '15px', }}><b>We value your privacy</b></div>
+          We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic.
+          <br />
+          By clicking "Accept", you consent to our use of cookies.
+        </div>
       </CookieConsent>
       <Header />
       <Home  />

@@ -1,5 +1,7 @@
 import React from 'react';
 import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
+import { AspectRatio } from 'react-aspect-ratio';
+import 'react-aspect-ratio/aspect-ratio.css';
 import "./Crosmoshooter.css";
 
 const Crosmoshooter = () => {
@@ -14,10 +16,10 @@ const Crosmoshooter = () => {
           Crosmocraft NFT.
         </span>
       </div>
-      <div className="cromoshooter-body">
+      <AspectRatio className="cromoshooter-body" ratio="16/9">
         <iframe width='100%' height='100%'
-        src="https://www.youtube.com/embed/XZe1fthBVXE?wmode=opaque&autoplay=1&controls=0&loop=1&mute=1"></iframe>
-      </div>
+        src="https://www.youtube.com/embed/XZe1fthBVXE?wmode=opaque&autoplay=1&controls=0&loop=1"></iframe>
+      </AspectRatio>
       <div className="crosmoshooter-footer">
         <span className="crosmo-header-desc">
         Crosmoshooter is an arcade shooter game with endless levels, playable 
