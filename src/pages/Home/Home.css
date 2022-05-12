@@ -23,7 +23,7 @@
 .img-title {
   margin-top: 25vh;
   width: 70%;
-  height: fit-content;
+  height: auto;
   z-index: 999;
 }
 

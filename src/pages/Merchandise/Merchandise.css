@@ -68,7 +68,7 @@
 }
 
 .merchandise-shirts {
-  height: fit-content;
+  height: auto;
   width: 100%;
 }
 

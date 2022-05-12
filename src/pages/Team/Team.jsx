@@ -16,7 +16,7 @@ const Team = () => {
         <TeamMemberCard avatar="/assets/crosmopolitan.png" name="CrosmoPolitan" role="Marketing Manager" />
         <TeamMemberCard avatar="/assets/crosmosuper.png" name="CrosmoSuper" role="Developer" />
         <TeamMemberCard avatar="/assets/crosmogabriel.png" name="CrosmoGabriel" role="Community Manager" twitter="https://twitter.com/GabrielKvaal" />
-        <TeamMemberCard avatar="/assets/crosmonaughty.png" name="CrosmoRuiXin" role="Game Developer" />
+        <TeamMemberCard avatar="/assets/crosmopirate.png" name="CrosmoPirate" role="Game Developer" />
       </div>
     </div>
   );

@@ -49,12 +49,12 @@
 
 .desktop-logo img {
   width: 50px;
-  height: fit-content;
+  height: auto;
 }
 
 .mobile-logo {
   width: 50px;
-  height: fit-content;
+  height: auto;
 }
 
 .discord-link {

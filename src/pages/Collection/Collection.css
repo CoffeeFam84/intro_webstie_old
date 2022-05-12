@@ -87,7 +87,7 @@
 
 .collection-card-img {
   width: 80%;
-  height: fit-content;
+  height: auto;
   z-index: 999;
 }
 
