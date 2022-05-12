@@ -3,7 +3,7 @@ import './Partners.css';
 
 const Partners = () => {
   return (
-    <div className='partners'>
+    <div className='partners container'>
       <div className="partners-header">
         <div className="partners-title">PARTNERS</div>
         <div className="horizental-bar"></div>
