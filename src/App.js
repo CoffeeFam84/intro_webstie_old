@@ -14,7 +14,7 @@ import './App.css';
 
 const cookieBarStyle = {
   background: '#280E8A', 
-  maxWidth: "1440px", 
+  // maxWidth: "1440px", 
   paddingRight: '20px', 
   display: 'flex', 
   alignItems: 'center'
@@ -37,6 +37,7 @@ const App = () => {
     <div className="app">
       <CookieConsent 
         enableDeclineButton
+        // debug={true}
         location="bottom"
         buttonText="ACCEPT"
         cookieName="crosmonautsCookie"
