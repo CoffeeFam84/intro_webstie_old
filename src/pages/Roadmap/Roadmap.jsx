@@ -15,7 +15,7 @@ const Roadmap = () => {
       </div>
       <div className="roadmap-body">
         {isMobile?
-        <img src="/assets/roadmap-mobile.svg" className="roadmap-img" />:
+        <img src="/assets/Mobile-roadmap1.png" className="roadmap-img" />:
         <img src="/assets/roadmap.svg" className="roadmap-img" />}
       </div>
     </div>
